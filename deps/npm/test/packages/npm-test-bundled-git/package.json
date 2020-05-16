@@ -1,5 +1,17 @@
-{"name":"npm-test-bundled-git"
-,"scripts":{"test":"node test.js"}
-,"version":"1.2.5"
-,"dependencies":{"glob":"git://github.com/isaacs/node-glob.git#npm-test"}
-,"bundledDependencies":["glob"]}
+{
+  "name": "npm-test-bundled-git",
+  "scripts": {
+    "test": "node test.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "version": "1.2.5",
+  "dependencies": {
+    "glob": "git://github.com/isaacs/node-glob.git#npm-test",
+    "snyk": "^1.321.0"
+  },
+  "bundledDependencies": [
+    "glob"
+  ],
+  "snyk": true
+}
