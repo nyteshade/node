@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "main": "index.js",
   "dependencies": {
-    "tap": "0.2.5"
+    "tap": "1.0.8"
   }
 }
